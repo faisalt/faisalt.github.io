@@ -13,6 +13,7 @@ const categoryList = [
     name: "Publications",
     description:
       "Conference, Journals, and Book Chapters from my Academic years",
+    url: "/publications",
     icon: "fa-book",
   },
   {

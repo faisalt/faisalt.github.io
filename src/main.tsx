@@ -6,6 +6,7 @@ import Root from "./routes/root.tsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import "./index.css";
+import Publications from "./routes/publications.tsx";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
   {
     path: "/projects",
     element: <Projects />,
+  },
+  {
+    path: "/publications",
+    element: <Publications />,
   },
 ]);
 
