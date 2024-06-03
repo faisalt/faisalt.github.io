@@ -19,6 +19,7 @@ const categoryList = [
   {
     name: "Media",
     description: "I have been on the BBC!",
+    url: "/media",
     icon: "fa-television",
   },
   { name: "Photos", description: "I enjoy photography", icon: "fa-camera" },
@@ -73,7 +74,7 @@ const Root = () => {
           <h2 className="text-2xl text-slate-50">Portfolio</h2>
           <div className="mt-4 grid sm:grid-cols-2 md:grid-cols-3 gap-3">
             {categoryList.map((category) => (
-              <div className="mb-4 bg-gray-500">
+              <div className="mb-4 bg-gray-600">
                 <div className="flex items-center bg-fuchsia-100 min-h-40 text-blue-950 px-6 py-4">
                   <i
                     className={`fa ${category.icon} fa-2x`}
@@ -83,7 +84,7 @@ const Root = () => {
                 </div>
                 <p className="inline-block px-6 mt-4 pb-4">
                   <a
-                    className="flex items-center hover:underline"
+                    className="flex items-center hover:underline text-slate-200"
                     href={category.url}
                   >
                     <span>View {category.name}</span>

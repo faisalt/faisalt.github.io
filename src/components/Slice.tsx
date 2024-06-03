@@ -9,7 +9,7 @@ type SliceProps = {
 
 const Slice: React.FC<SliceProps> = ({ children, bgColor, className }) => {
   return (
-    <section className={classNames("py-8", bgColor, className)}>
+    <section className={classNames("pt-8 pb-12", bgColor, className)}>
       <div className={`max-w-5xl mx-auto px-6`}>{children}</div>
     </section>
   );

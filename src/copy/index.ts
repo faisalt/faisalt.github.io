@@ -1,3 +1,6 @@
+import bbc from "../assets/media/bbc.png";
+import conversation from "../assets/media/conversation.png";
+import ict from "../assets/media/ict.png";
 import emergeVideo from "../assets/projects/EMERGE.mp4";
 import changePwd1 from "../assets/projects/changepass.png";
 import changePwd2 from "../assets/projects/changepass2.png";
@@ -197,5 +200,29 @@ export const publicationsData = [
       "Hart, J., Ridley, C., Taher, F., Sas, C., and Dix, A. 2008. Exploring the facebook experience: a new approach to usability. In Proceedings of the 5th Nordic Conference on Human-Computer interaction: Building Bridges (Lund, Sweden, October 20 - 22, 2008). NordiCHI '08, vol. 358. ACM, New York, NY, 471-474.",
     url: "http://dl.acm.org/citation.cfm?id=1463222",
     title: "Link to Facebook paper",
+  },
+];
+
+export const mediaData = [
+  {
+    image: bbc,
+    url: "http://www.bbc.co.uk/news/uk-england-lancashire-32296315",
+    title: "EMERGE - BBC Northwest coverage",
+    description:
+      "The EMERGE prototype received coverage by BBC News in April 2015.",
+  },
+  {
+    image: ict,
+    url: "https://youtu.be/YgJhQtFXV0w?t=52",
+    title: "GHOST project - ICT Portugal",
+    description:
+      "The GHOST project, which I worked on as a Research Associate at Lancaster University, received media coverage at a showcasing event at the ICT Conference in Portugal in November 2015.",
+  },
+  {
+    image: conversation,
+    url: "http://theconversation.com/five-years-ago-the-ipad-changed-clicks-to-touches-but-another-tablet-revolution-is-coming-39650",
+    title: "EMERGE - The Conversation",
+    description:
+      "The EMERGE prototype was also featured in an article in April 2015 by The Conversation, a media outlet for the academic and research community.",
   },
 ];

@@ -11,7 +11,7 @@ const Header: React.FC<HeaderProps> = ({ title, focussed }) => {
     <header className="w-full" style={{ backgroundColor: "#343a40" }}>
       <div
         className={classNames(
-          "max-w-7xl mr-auto ml-auto",
+          "max-w-7xl mr-auto ml-auto px-6",
           { "py-10": !focussed },
           { "py-4": focussed }
         )}
