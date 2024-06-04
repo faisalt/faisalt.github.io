@@ -7,7 +7,7 @@ const Publications = () => {
     <>
       <Header title="Publications" focussed />
       <Slice bgColor="bg-white">
-        <h2 className="mt-6 text-2xl text-slate-900">Publications list</h2>
+        <h2 className="mt-8 text-2xl text-slate-900">Publications list</h2>
         <ul className="mt-6">
           {publicationsData.map((publication) => (
             <li className="mt-4">

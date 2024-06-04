@@ -7,6 +7,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import "./index.css";
 import Media from "./routes/media.tsx";
+import Photography from "./routes/photography.tsx";
 import Publications from "./routes/publications.tsx";
 
 const router = createBrowserRouter([
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
   {
     path: "/media",
     element: <Media />,
+  },
+  {
+    path: "/photography",
+    element: <Photography />,
   },
 ]);
 

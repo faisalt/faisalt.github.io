@@ -22,7 +22,12 @@ const categoryList = [
     url: "/media",
     icon: "fa-television",
   },
-  { name: "Photos", description: "I enjoy photography", icon: "fa-camera" },
+  {
+    name: "Photos",
+    description: "I enjoy photography",
+    url: "/photography",
+    icon: "fa-camera",
+  },
   {
     name: "Artwork",
     description: "Some sketches I've done",
