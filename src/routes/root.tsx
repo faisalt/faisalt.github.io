@@ -24,18 +24,20 @@ const categoryList = [
   },
   {
     name: "Photos",
-    description: "I enjoy photography",
+    description: "I enjoy taking photos",
     url: "/photography",
     icon: "fa-camera",
   },
   {
     name: "Artwork",
     description: "Some sketches I've done",
+    url: "/artwork",
     icon: "fa-pencil-square-o",
   },
   {
     name: "Comics",
     description: "Comics I've drawn, mainly involving worms",
+    url: "/comics",
     icon: "fa-pencil-square-o",
   },
 ];
@@ -46,7 +48,7 @@ const Root = () => {
       <Header title="Faisal Taher" />
       <main>
         <Slice bgColor="bg-emerald-950">
-          <h2 className="text-slate-50 text-2xl">Summary</h2>
+          <h2 className="text-slate-50 text-2xl">Professional Summary</h2>
           <p className="mt-4 text-sky-100">
             I have been a full-stack developer, researcher, user experience
             developer, front-end developer, and I am currently a lead developer.
@@ -79,7 +81,7 @@ const Root = () => {
           <h2 className="text-2xl text-slate-50">Portfolio</h2>
           <div className="mt-4 grid sm:grid-cols-2 md:grid-cols-3 gap-3">
             {categoryList.map((category) => (
-              <div className="mb-4 bg-gray-600">
+              <div key={category.name} className="mb-4 bg-gray-600">
                 <div className="flex items-center bg-fuchsia-100 min-h-40 text-blue-950 px-6 py-4">
                   <i
                     className={`fa ${category.icon} fa-2x`}
@@ -89,7 +91,7 @@ const Root = () => {
                 </div>
                 <p className="inline-block px-6 mt-4 pb-4">
                   <a
-                    className="flex items-center hover:underline text-slate-200"
+                    className="flex items-center hover:underline text-slate-200 hover:text-slate-100 focus:bg-yellow-200 focus:text-blue-700 focus:outline-none"
                     href={category.url}
                   >
                     <span>View {category.name}</span>

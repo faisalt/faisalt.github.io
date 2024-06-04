@@ -173,9 +173,8 @@ export const publicationsData = [
   {
     citation:
       "Taher, F., Cheverst, K., and Harding, M. (2010). Exploring Personal Mobile Phones and Digital Display Systems to Support Indoor Navigation by Formative Study Methods. International Journal of Handheld Computing Research 1, 3 (Jul. 2010), 32-50.",
-    url: "Link to Indoor Navigation article",
-    title:
-      "https://scholar.google.co.uk/scholar?oi=bibs&cluster=6505939156732179895&btnI=1&hl=en",
+    url: "https://scholar.google.co.uk/scholar?oi=bibs&cluster=6505939156732179895&btnI=1&hl=en",
+    title: "Link to Indoor Navigation article",
   },
   {
     citation:

@@ -28,6 +28,7 @@ const Projects = () => {
                       !project.grid && project.images.length > 1 && index > 0,
                   })}
                   src={imgUrl}
+                  aria-hidden
                 />
               ))}
             </div>

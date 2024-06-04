@@ -15,7 +15,7 @@ const Publications = () => {
                 {publication.citation}&nbsp;
                 <a
                   href={publication.url}
-                  className="text-blue-700 hover:underline hover:text-blue-900"
+                  className="text-blue-700 hover:underline hover:text-blue-900 focus:bg-yellow-200 focus:outline-none"
                 >
                   {publication.title}
                 </a>

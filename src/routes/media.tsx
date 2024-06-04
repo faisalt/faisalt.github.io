@@ -17,7 +17,7 @@ const Media = () => {
           >
             <a
               href={media.url}
-              className="inline-block mt-8"
+              className="inline-block mt-8 "
               title={media.title}
             >
               <img src={media.image} className="" />

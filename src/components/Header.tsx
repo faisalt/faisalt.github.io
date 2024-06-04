@@ -19,7 +19,11 @@ const Header: React.FC<HeaderProps> = ({ title, focussed }) => {
         {focussed ? (
           <nav className="text-slate-50 flex items-center">
             <div>
-              <a href="/" title="Home" className="text-2xl">
+              <a
+                href="/"
+                title="Home"
+                className="text-2xl focus:bg-yellow-200 focus:text-blue-700 focus:outline-none"
+              >
                 <i className="fa fa-home" aria-hidden="true"></i>
               </a>
             </div>

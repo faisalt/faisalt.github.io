@@ -10,7 +10,7 @@ const photos = import.meta.glob("../assets/photography/*.jpg", {
 const Photography = () => {
   return (
     <>
-      <Header title="Publications" focussed />
+      <Header title="Photography" focussed />
       <Slice bgColor="bg-white">
         <div className="mt-6 columns-3 gap-1">
           {Object.keys(photos).map((key) => (

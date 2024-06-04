@@ -6,6 +6,8 @@ import Root from "./routes/root.tsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import "./index.css";
+import Artwork from "./routes/artwork.tsx";
+import Comics from "./routes/comics.tsx";
 import Media from "./routes/media.tsx";
 import Photography from "./routes/photography.tsx";
 import Publications from "./routes/publications.tsx";
@@ -30,6 +32,14 @@ const router = createBrowserRouter([
   {
     path: "/photography",
     element: <Photography />,
+  },
+  {
+    path: "/artwork",
+    element: <Artwork />,
+  },
+  {
+    path: "/comics",
+    element: <Comics />,
   },
 ]);
 
