@@ -44,7 +44,7 @@ export const categoryData = [
   },
   {
     name: 'Media',
-    description: 'I have been on the BBC!',
+    description: 'I have been on BBC Northwest!',
     url: '/media',
     icon: 'fa-television',
   },
