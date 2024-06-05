@@ -28,6 +28,46 @@ import toolSupport from '../assets/publications/toolsupport.pdf';
 import touchInput from '../assets/publications/touchinput.pdf';
 import userPreferences from '../assets/publications/userPreferences.pdf';
 
+export const categoryData = [
+  {
+    name: 'Projects',
+    url: '/projects',
+    description: 'Professional and personal projects',
+    icon: 'fa-lightbulb-o',
+  },
+  {
+    name: 'Publications',
+    description:
+      'Conference papers, journal articles, and book chapters from my academic years',
+    url: '/publications',
+    icon: 'fa-book',
+  },
+  {
+    name: 'Media',
+    description: 'I have been on the BBC!',
+    url: '/media',
+    icon: 'fa-television',
+  },
+  {
+    name: 'Photos',
+    description: 'I enjoy taking photos',
+    url: '/photography',
+    icon: 'fa-camera',
+  },
+  {
+    name: 'Artwork',
+    description: "Some sketches I've done",
+    url: '/artwork',
+    icon: 'fa-pencil-square-o',
+  },
+  {
+    name: 'Comics',
+    description: "Comics I've drawn, mainly involving worms",
+    url: '/comics',
+    icon: 'fa-pencil-square-o',
+  },
+];
+
 export const projectsData = [
   {
     images: [report1],

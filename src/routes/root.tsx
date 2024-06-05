@@ -1,46 +1,7 @@
 import '../App.css';
 import Header from '../components/Header';
 import Slice from '../components/Slice';
-
-const categoryList = [
-  {
-    name: 'Projects',
-    url: '/projects',
-    description: 'Professional and personal projects ',
-    icon: 'fa-lightbulb-o',
-  },
-  {
-    name: 'Publications',
-    description:
-      'Conference, Journals, and Book Chapters from my Academic years',
-    url: '/publications',
-    icon: 'fa-book',
-  },
-  {
-    name: 'Media',
-    description: 'I have been on the BBC!',
-    url: '/media',
-    icon: 'fa-television',
-  },
-  {
-    name: 'Photos',
-    description: 'I enjoy taking photos',
-    url: '/photography',
-    icon: 'fa-camera',
-  },
-  {
-    name: 'Artwork',
-    description: 'Some sketches I&apos;ve done',
-    url: '/artwork',
-    icon: 'fa-pencil-square-o',
-  },
-  {
-    name: 'Comics',
-    description: 'Comics I&apos;ve drawn, mainly involving worms',
-    url: '/comics',
-    icon: 'fa-pencil-square-o',
-  },
-];
+import { categoryData } from '../copy';
 
 const Root = () => {
   return (
@@ -74,14 +35,14 @@ const Root = () => {
             autonomy, psychological safety, challenges, growth opportunities,
           </p>
         </Slice>
-        <Slice bgColor='bg-gray-800'>
+        <Slice bgColor='bg-gray-600'>
           <h2 className='text-2xl text-slate-50'>Highlights</h2>
           <p>Coming soon...</p>
         </Slice>
         <Slice bgColor='bg-emerald-950'>
           <h2 className='text-2xl text-slate-50'>Portfolio</h2>
           <div className='mt-4 grid sm:grid-cols-2 md:grid-cols-3 gap-3'>
-            {categoryList.map((category) => (
+            {categoryData.map((category) => (
               <div key={category.name} className='mb-4 bg-gray-600'>
                 <div className='flex items-center bg-fuchsia-100 min-h-40 text-blue-950 px-6 py-4'>
                   <i

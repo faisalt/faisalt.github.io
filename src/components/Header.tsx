@@ -8,7 +8,7 @@ type HeaderProps = {
 
 const Header: React.FC<HeaderProps> = ({ title, focussed }) => {
   return (
-    <header className='w-full' style={{ backgroundColor: '#343a40' }}>
+    <header className='w-full bg-gray-700'>
       <div
         className={classNames(
           'max-w-7xl mr-auto ml-auto px-6',
