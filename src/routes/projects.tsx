@@ -1,7 +1,6 @@
 import classNames from 'classnames';
 import Header from '../components/Header';
 import Slice from '../components/Slice';
-
 import { projectsData } from '../copy';
 
 const Projects = () => {
