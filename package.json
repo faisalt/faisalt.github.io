@@ -1,6 +1,7 @@
 {
   "name": "websitev2",
   "version": "0.0.0",
+  "homepage": "https://faisalt.github.io/websitev2/",
   "type": "module",
   "scripts": {
     "dev": "vite",
