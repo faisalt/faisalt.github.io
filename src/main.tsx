@@ -14,11 +14,11 @@ import Publications from './routes/publications.tsx';
 
 const router = createBrowserRouter([
   {
-    path: '/websitev2/',
+    path: '/websitev2',
     element: <Root />,
   },
   {
-    path: 'websitev2/projects',
+    path: '/websitev2/projects/',
     element: <Projects />,
   },
   {
