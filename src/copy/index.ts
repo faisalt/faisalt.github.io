@@ -31,7 +31,7 @@ import userPreferences from '../assets/publications/userPreferences.pdf';
 export const categoryData = [
   {
     name: 'Projects',
-    url: '/projects',
+    url: '/websitev2/projects',
     description: 'Professional and personal projects',
     icon: 'fa-lightbulb-o',
   },
@@ -39,31 +39,31 @@ export const categoryData = [
     name: 'Publications',
     description:
       'Conference papers, journal articles, and book chapters from my academic years',
-    url: '/publications',
+    url: '/websitev2/publications',
     icon: 'fa-book',
   },
   {
     name: 'Media',
     description: 'I have been on BBC Northwest!',
-    url: '/media',
+    url: '/websitev2/media',
     icon: 'fa-television',
   },
   {
     name: 'Photos',
     description: 'I enjoy taking photos',
-    url: '/photography',
+    url: '/websitev2/photography',
     icon: 'fa-camera',
   },
   {
     name: 'Artwork',
     description: "Some sketches I've done",
-    url: '/artwork',
+    url: '/websitev2/artwork',
     icon: 'fa-pencil-square-o',
   },
   {
     name: 'Comics',
     description: "Comics I've drawn, mainly involving worms",
-    url: '/comics',
+    url: '/websitev2/comics',
     icon: 'fa-pencil-square-o',
   },
 ];
