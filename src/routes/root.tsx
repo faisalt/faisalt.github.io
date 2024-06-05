@@ -37,7 +37,7 @@ const Root = () => {
         </Slice>
         <Slice bgColor='bg-gray-600'>
           <h2 className='text-2xl text-slate-50'>Highlights</h2>
-          <p>Coming soon...</p>
+          <p>Coming very soon...</p>
         </Slice>
         <Slice bgColor='bg-emerald-950'>
           <h2 className='text-2xl text-slate-50'>Portfolio</h2>
