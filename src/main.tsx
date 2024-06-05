@@ -14,27 +14,27 @@ import Publications from './routes/publications.tsx';
 
 const router = createBrowserRouter([
   {
-    path: '/websitev2',
+    path: '/',
     element: <Root />,
   },
   {
-    path: '/websitev2/projects/',
+    path: '/projects/',
     element: <Projects />,
   },
   {
-    path: '/websitev2/publications',
+    path: '/publications',
     element: <Publications />,
   },
   {
-    path: '/websitev2/media',
+    path: '/media',
     element: <Media />,
   },
   {
-    path: '/websitev2/photography',
+    path: '/photography',
     element: <Photography />,
   },
   {
-    path: '/websitev2/artwork',
+    path: '/artwork',
     element: <Artwork />,
   },
   {
