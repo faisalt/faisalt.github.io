@@ -1,50 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Projects from './routes/projects.tsx';
-import Root from './routes/root.tsx';
 
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 
-import './index.css';
 import Artwork from './routes/artwork.tsx';
 import Comics from './routes/comics.tsx';
 import Media from './routes/media.tsx';
 import Photography from './routes/photography.tsx';
+import Projects from './routes/projects.tsx';
 import Publications from './routes/publications.tsx';
+import Root from './routes/root.tsx';
 
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <Root />,
-  },
-  {
-    path: '/projects/',
-    element: <Projects />,
-  },
-  {
-    path: '/publications',
-    element: <Publications />,
-  },
-  {
-    path: '/media',
-    element: <Media />,
-  },
-  {
-    path: '/photography',
-    element: <Photography />,
-  },
-  {
-    path: '/artwork',
-    element: <Artwork />,
-  },
-  {
-    path: '/websitev2/comics',
-    element: <Comics />,
-  },
-]);
+import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <HashRouter basename='/'>
+      <Routes>
+        <Route path='/' element={<Root />} />
+        <Route path='/projects' element={<Projects />} />
+        <Route path='/publications' element={<Publications />} />
+        <Route path='/media' element={<Media />} />
+        <Route path='/photography' element={<Photography />} />
+        <Route path='/artwork' element={<Artwork />} />
+        <Route path='/comics' element={<Comics />} />
+      </Routes>
+    </HashRouter>
   </React.StrictMode>,
 );

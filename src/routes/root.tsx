@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import '../App.css';
 import Header from '../components/Header';
 import Slice from '../components/Slice';
@@ -52,15 +53,15 @@ const Root = () => {
                   <p className='ml-4'>{category.description}</p>
                 </div>
                 <p className='inline-block px-6 mt-4 pb-4'>
-                  <a
+                  <Link
                     className='flex items-center hover:underline text-slate-200 hover:text-slate-100 focus:bg-yellow-200 focus:text-blue-700 focus:outline-none'
-                    href={category.url}
+                    to={category.url}
                   >
                     <span>View {category.name}</span>
                     <span className='ml-2 no-underline'>
                       <i className='fa fa-chevron-right' aria-hidden='true'></i>
                     </span>
-                  </a>
+                  </Link>
                 </p>
               </div>
             ))}
