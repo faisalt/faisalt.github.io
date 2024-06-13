@@ -84,15 +84,18 @@ const Root = () => {
                 <>
                   <p className='text-sky-100 text-md'>
                     This was a project I led on whilst I was a Research
-                    Associate at Lancaster University. It was possibly the most
-                    complicated and rewarding undertaking of my career. At the
-                    end of it I got experience in CAD modelling, fabricating
-                    custom parts using laser cutting, 3D printing, soldering
-                    electronics, creating a NodeJS app using websockets and
-                    working with large complex 2D array structures, video
-                    editing, and I could honestly go on.
+                    Associate at Lancaster University, which was to create a
+                    physical 3D bar chart. It fed into research around shape
+                    changing displays, i.e. imagine if the pixels on your phone
+                    could move up and down.
                   </p>
                   <p className='mt-2 text-sky-100 text-md'>
+                    It was possibly the most complicated and rewarding
+                    undertaking of my career. At the end of it I got experience
+                    in CAD modelling, fabricating custom parts using laser
+                    cutting, 3D printing, working with electronics, creating a
+                    NodeJS app using websockets, working with large complex 2D
+                    array structures, video editing, and I could honestly go on.
                     I defintely built a lot of resilience as well as confidence
                     as a result.
                   </p>
