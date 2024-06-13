@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom';
 import '../App.css';
+import emergeVideo from '../assets/projects/EMERGE.mp4';
+import emergePoster from '../assets/projects/emerge-thumbnail.png';
 import Header from '../components/Header';
+import HighlightCard from '../components/HighlightCard';
 import Slice from '../components/Slice';
 import { categoryData } from '../copy';
 
@@ -37,8 +40,66 @@ const Root = () => {
           </p>
         </Slice>
         <Slice bgColor='bg-gray-600'>
-          <h2 className='text-2xl text-slate-50'>Highlights</h2>
-          <p>Coming very soon...</p>
+          <h2 className='text-2xl text-slate-50'>Favourite Projects</h2>
+          <div className='mt-4 grid md:grid-cols-2 gap-4'>
+            <HighlightCard
+              ctaMedia={
+                <iframe
+                  className='h-80 w-full'
+                  src='https://www.youtube.com/embed/WaEhLPVNOoU'
+                  title='NFC Coffee System'
+                  allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+                  referrerPolicy='strict-origin-when-cross-origin'
+                  allowFullScreen
+                ></iframe>
+              }
+              description={
+                <p className='text-sky-100 text-md'>
+                  This was a personal side project whilst I was working at Jisc.
+                  To replace a paper based coffee tracking system we used in the
+                  office, I created digital software/hardware system which
+                  included:
+                  <ul className='list-disc mt-2'>
+                    <li className='ml-6'>
+                      a python Flask application (server, client, database) to
+                      manage users, NFC tags, and their coffee balance
+                    </li>
+                    <li className='ml-6 mt-1'>
+                      a Raspberry Pi connected to an NFC reader to allow people
+                      to scan their NFC chip. I also repurposed an old Android
+                      phone and wrote a very basic Android application to serve
+                      the client-side UI
+                    </li>
+                  </ul>
+                </p>
+              }
+            />
+            <HighlightCard
+              ctaMedia={
+                <video className='w-full' controls poster={emergePoster}>
+                  <source src={emergeVideo} type='video/mp4'></source>
+                </video>
+              }
+              description={
+                <>
+                  <p className='text-sky-100 text-md'>
+                    This was a project I led on whilst I was a Research
+                    Associate at Lancaster University. It was possibly the most
+                    complicated and rewarding undertaking of my career. At the
+                    end of it I got experience in CAD modelling, fabricating
+                    custom parts using laser cutting, 3D printing, soldering
+                    electronics, creating a NodeJS app using websockets and
+                    working with large complex 2D array structures, video
+                    editing, and I could honestly go on.
+                  </p>
+                  <p className='mt-2 text-sky-100 text-md'>
+                    I defintely built a lot of resilience as well as confidence
+                    as a result.
+                  </p>
+                </>
+              }
+            />
+          </div>
         </Slice>
         <Slice bgColor='bg-emerald-950'>
           <h2 className='text-2xl text-slate-50'>Portfolio</h2>
