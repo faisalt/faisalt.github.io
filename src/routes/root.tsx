@@ -14,17 +14,17 @@ const Root = () => {
       <main>
         <Slice bgColor='bg-emerald-950'>
           <h2 className='text-slate-50 text-2xl'>Professional Summary</h2>
-          <p className='mt-4 text-sky-100'>
+          <p className='mt-2 text-sky-100'>
             I have been a full-stack developer, researcher, user experience
             developer, front-end developer, and I am currently a lead developer.
             I have led various projects, written React, Python and C#
             applications, built a physical 3D bar chart using custom hardware,
             and ran user testing sessions and workshops. I&apos;ve been
             fortunate to have experienced various aspects of development, both
-            from a technical and leadership standpoint. etc.
+            from a technical and leadership standpoint.
           </p>
           <p className='mt-2 text-sky-100'>
-            I love working in an agile team, especially mobbing and pairing with
+            I love working in a team, especially mobbing and pairing with
             developers, coaching those new to the field, and collaborating with
             stakeholders. It&apos;s a rewarding experience working together,
             delivering outcomes regularly, and reflecting and improving on the
@@ -37,6 +37,15 @@ const Root = () => {
             achieve this, I believe in investing in the people and their
             motivation and creating a positive work environment, e.g. through
             autonomy, psychological safety, challenges, growth opportunities,
+            etc.
+          </p>
+          <h2 className='mt-4 text-slate-50 text-2xl'>Personal Summary</h2>
+          <p className='mt-2 text-sky-100'>
+            I'm a dad so free time is a bit limited! I mainly use it to try and
+            keep fit through running and going to the gym. I also enjoy cooking.
+            When I get a chance I do like to delve into my old hobbies like
+            sketching, photography, and playing my guitar. I also want to get
+            back into reading sci-fi again.
           </p>
         </Slice>
         <Slice bgColor='bg-gray-600'>
@@ -54,24 +63,31 @@ const Root = () => {
                 ></iframe>
               }
               description={
-                <p className='text-sky-100 text-md'>
-                  This was a personal side project whilst I was working at Jisc.
-                  To replace a paper based coffee tracking system we used in the
-                  office, I created digital software/hardware system which
-                  included:
-                  <ul className='list-disc mt-2'>
-                    <li className='ml-6'>
-                      a python Flask application (server, client, database) to
-                      manage users, NFC tags, and their coffee balance
-                    </li>
-                    <li className='ml-6 mt-1'>
-                      a Raspberry Pi connected to an NFC reader to allow people
-                      to scan their NFC chip. I also repurposed an old Android
-                      phone and wrote a very basic Android application to serve
-                      the client-side UI
-                    </li>
-                  </ul>
-                </p>
+                <>
+                  <p className='text-sky-100 text-md'>
+                    This was a personal side project whilst I was working at
+                    Jisc. To replace a paper based coffee tracking system we
+                    used in the office, I created digital software/hardware
+                    system which included:
+                    <ul className='list-disc mt-2'>
+                      <li className='ml-6'>
+                        a python Flask application (server, client, database) to
+                        manage users, NFC tags, and their coffee balance
+                      </li>
+                      <li className='ml-6 mt-1'>
+                        a Raspberry Pi connected to an NFC reader to allow
+                        people to scan their NFC chip. I also repurposed an old
+                        Android phone and wrote a very basic Android application
+                        to serve the client-side UI
+                      </li>
+                    </ul>
+                  </p>
+                  <p className='mt-2 text-sky-100 text-md'>
+                    In a way the development part was the easy bit. The main
+                    challenges were around keeping the system operational 24/7
+                    as a self-serve tool.
+                  </p>
+                </>
               }
             />
             <HighlightCard
@@ -92,12 +108,12 @@ const Root = () => {
                   <p className='mt-2 text-sky-100 text-md'>
                     It was possibly the most complicated and rewarding
                     undertaking of my career. At the end of it I got experience
-                    in CAD modelling, fabricating custom parts using laser
-                    cutting, 3D printing, working with electronics, creating a
-                    NodeJS app using websockets, working with large complex 2D
-                    array structures, video editing, and I could honestly go on.
-                    I defintely built a lot of resilience as well as confidence
-                    as a result.
+                    in CAD modelling, fabricating and building with custom
+                    materials using laser cutting and 3D printing, working with
+                    electronics, creating a NodeJS app using websockets, working
+                    with large complex 2D data structures, and I could honestly
+                    go on. I defintely built a lot of resilience as well as
+                    confidence.
                   </p>
                 </>
               }
